@@ -31,7 +31,7 @@ jobs:
         working-directory: ./myapps
 
       - name: Zip build artifact (myapps folder)
-        run: zip -r release.zip webapp05/myapps
+        run: zip -r release.zip ./*
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
