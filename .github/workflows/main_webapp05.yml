@@ -28,6 +28,7 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
+        working-directory: ./myapps
 
       - name: Zip build artifact (myapps folder)
         run: zip -r release.zip webapp05/myapps
